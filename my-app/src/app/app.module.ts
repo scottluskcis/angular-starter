@@ -19,9 +19,6 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
 import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@azure/msal-angular';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material-module';
-
 import { environment } from 'src/environments/environment';
 
 const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1; // Remove this line to use Angular Universal
@@ -82,8 +79,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     ProfileComponent
   ],
   imports: [ 
-    BrowserModule,
-    BrowserAnimationsModule,
+    BrowserModule, 
     NoopAnimationsModule, // Animations cause delay which interfere with E2E tests
     AppRoutingModule,
     MatButtonModule,
@@ -92,8 +88,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     MatMenuModule,
     MatTableModule,
     MatCardModule,
-    HttpClientModule,
-    MaterialModule,
+    HttpClientModule, 
     MsalModule 
   ],
   providers: [

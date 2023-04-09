@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   msalConfig: {
       auth: {
-          clientId: "",
+          clientId: "30cc08d3-8d5e-406d-b289-4c93c46ba426",
       }
   },
   apiConfig: {
@@ -15,22 +15,22 @@ export const environment = {
   },
   b2cPolicies: {
       names: {
-          signUpSignIn: "",
-          resetPassword: "",
-          editProfile: ""
+          signUpSignIn: "B2C_1_susi",
+          resetPassword: "B2C_1_reset_password",
+          editProfile: "B2C_1_edit_profile"
       },
       authorities: {
           signUpSignIn: {
-              authority: ""
+              authority: "https://scottluskdev.b2clogin.com/scottluskdev.onmicrosoft.com/B2C_1_susi"
           },
           resetPassword: {
-              authority: ""
+              authority: "https://scottluskdev.b2clogin.com/scottluskdev.onmicrosoft.com/B2C_1_reset_password"
           },
           editProfile: {
-              authority: ""
+              authority: "https://scottluskdev.b2clogin.com/scottluskdev.onmicrosoft.com/B2C_1_edit_profile"
           }
       },
-      authorityDomain: ""
+      authorityDomain: "scottluskdev.b2clogin.com"
   }
 };
 
