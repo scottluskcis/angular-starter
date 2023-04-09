@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserUtils } from '@azure/msal-browser';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FailedComponent } from './failed/failed.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent
   },
+  {
+      path: 'login-failed',
+      component: FailedComponent
+  }
 ];
 
 const isIframe = window !== window.parent && !window.opener;

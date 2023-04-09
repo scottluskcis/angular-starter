@@ -1,23 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppModule } from './../app.module';
+import { FailedComponent } from './failed.component';
 
-import { ProfileComponent } from './profile.component';
-
-describe('ProfileComponent', () => {
-  let component: ProfileComponent;
-  let fixture: ComponentFixture<ProfileComponent>;
+describe('FailedComponent', () => {
+  let component: FailedComponent;
+  let fixture: ComponentFixture<FailedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppModule],
-      declarations: [ ProfileComponent ]
+      declarations: [ FailedComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfileComponent);
+    fixture = TestBed.createComponent(FailedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
